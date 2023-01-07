@@ -1,0 +1,4 @@
+[submodule "tarpc"]
+	path = tarpc
+	url = git@github.com:whizsid/tarpc.git
+	branch = wasm-support

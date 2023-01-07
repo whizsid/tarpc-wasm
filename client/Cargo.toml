@@ -1,0 +1,20 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rpc = {path="../rpc", features = ["client"]}
+yew = { version = "0.20.0", features = ["csr"] }
+log = "0.4.17"
+wasm-bindgen = "0.2.83"
+wasm-bindgen-futures = "0.4.33"
+console_log = "0.2.0"
+ws_stream_wasm = "0.7.3"
+tarpc = {path = "../tarpc/tarpc", features = ["client", "serde-transport", "serde-transport-json"], default-features =  false}
+async_io_stream = { version="0.3.3", features=["tokio_io"] }
+tokio-util = {version = "0.7.4", default-features = false, features = ["codec"]}
+tokio-serde = "0.8.0"
+web-sys = "0.3.60"

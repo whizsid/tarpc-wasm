@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "tarpc/tarpc",
+    "tarpc/plugins",
+    "server",
+    "client",
+    "rpc"
+]
+exclude = ["./tarpc"]
