@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rpc = {path="../rpc", features = ["server"]}
-tarpc = {path="../tarpc/tarpc", features = ["server", "serde-transport", "serde-transport-json"]}
+rpc = {path="../rpc", default-features = false, features = ["server"]}
+tarpc = {path="../tarpc/tarpc", default-features = false, features = ["server", "serde-transport", "serde-transport-json"]}
 env_logger = "0.10.0"
 log="0.4.17"
 async-trait = "0.1.61"
